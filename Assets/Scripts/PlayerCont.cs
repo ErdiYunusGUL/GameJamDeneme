@@ -7,6 +7,7 @@ public class PlayerCont : MonoBehaviour
     public float speed = 10.0f;
     public float jumpForce = 5f;
     public float minMicLevel = 0.01f; 
+
     private Rigidbody2D rb2d;
     private MicrophoneInput micInput;
     private bool isGrounded;
