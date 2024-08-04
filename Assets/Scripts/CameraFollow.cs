@@ -4,23 +4,18 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public Transform target; // Takip edilecek hedef (karakter)
-    public float smoothSpeed = 0.125f; // Kameranýn takip hýzýný ayarlar
-    public Vector3 offset; // Kameranýn karaktere olan konum farký
+    private Transform player;
+    public float smoothX;
 
-    public float boundaryX = 5f; // X eksenindeki sýnýr
-    public float boundaryY = 3f; // Y eksenindeki sýnýr
-
-    void LateUpdate()
+     void Start()
     {
-        // Hedefin ekranýn dýþýna çýkýp çýkmadýðýný kontrol et
-        if (Mathf.Abs(target.position.x - transform.position.x) > boundaryX ||
-            Mathf.Abs(target.position.y - transform.position.y) > boundaryY)
-        {
-            Vector3 desiredPosition = target.position + offset;
-            Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
-            transform.position = new Vector3(smoothedPosition.x, smoothedPosition.y, transform.position.z);
-        }
+        player = GameObject.Find("Player").transform;  
+    }
+
+     void LateUpdate()
+    {
+        float posX = Mathf.MoveTowards(transform.position.x, player.position.x, smoothX);
+        transform.position = new Vector3(posX, transform.position.y,transform.position.z);  
     }
 }
 
