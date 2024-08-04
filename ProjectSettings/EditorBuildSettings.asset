@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Huly-MainMenu.unity
     guid: 6134a2213a50a4ed0995cee63147c257
+  - enabled: 1
+    path: Assets/Scenes/erdi.unity
+    guid: ba98481e90c7cf2479fde371c45d0650
   m_configObjects: {}
