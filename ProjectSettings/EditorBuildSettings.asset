@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Kazim-SettingsMenu.unity
     guid: 1a872d8b121a2704f913d5cf76ed7ee9
+  - enabled: 1
+    path: Assets/Scenes/MainScene.unity
+    guid: b20eae93c4a164933be7b573b15e0bb2
+  - enabled: 1
+    path: Assets/Scenes/SceneLook.unity
+    guid: 165ce8342ddcf41569c5c526f2e350ee
   m_configObjects: {}
