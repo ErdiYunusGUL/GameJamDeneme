@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Kazim-SettingsMenu.unity
+    guid: 1a872d8b121a2704f913d5cf76ed7ee9
   m_configObjects: {}
