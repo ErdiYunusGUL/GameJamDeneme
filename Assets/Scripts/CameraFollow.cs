@@ -5,9 +5,7 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     private Transform player;
-
     public float smoothX;
-    public float smoothY;
 
      void Start()
     {
@@ -17,8 +15,6 @@ public class CameraFollow : MonoBehaviour
      void LateUpdate()
     {
         float posX = Mathf.MoveTowards(transform.position.x, player.position.x, smoothX);
-        float posY = Mathf.MoveTowards(transform.position.y, player.position.y, smoothY);
-
         transform.position = new Vector3(posX, transform.position.y,transform.position.z);  
     }
 }
