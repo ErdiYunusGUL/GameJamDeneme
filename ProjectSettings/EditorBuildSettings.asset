@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+<<<<<<< Updated upstream
+=======
+    path: Assets/Scenes/Huly-MainMenu.unity
+    guid: 6134a2213a50a4ed0995cee63147c257
+  - enabled: 1
+    path: Assets/Scenes/erdi.unity
+    guid: ba98481e90c7cf2479fde371c45d0650
+  - enabled: 0
+    path: Assets/Scenes/huly.unity
+    guid: 6fe334af5671d4f29b72739e6c0fc9a9
+  - enabled: 1
+>>>>>>> Stashed changes
     path: Assets/Scenes/Kazim-SettingsMenu.unity
     guid: 1a872d8b121a2704f913d5cf76ed7ee9
   m_configObjects: {}
